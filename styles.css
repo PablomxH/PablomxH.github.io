@@ -90,3 +90,16 @@ body {
     display: block; /* Convertir las imágenes en bloques para que se muestren en línea */
     margin: 0 auto 5px; /* Centrar las imágenes horizontalmente */
 }
+
+.bubble {
+    background-color: #ffff; /* Color de fondo de la burbuja */
+    padding: 25px;
+    border-radius: 100px;
+    display: inline-block; /* Hace que la burbuja se ajuste al contenido */
+    height: 100px;
+    width: 120px;
+}
+.bubble:hover {
+    transform: scale(1.05); /* Hace que la burbuja se haga ligeramente grande */
+    background-color: #e4f8f6; /* Cambia el color de fondo al pasar el cursor */
+}

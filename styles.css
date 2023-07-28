@@ -44,3 +44,22 @@ body {
 #sidebar li a:hover {
     background-color: #ddd;
 }
+
+.title {
+    text-align: center;
+}
+
+.networks {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.networks a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+}
+.networks img {
+    width: 50px; /* Ancho de la imagen */
+    height: 50px; /* Alto de la imagen */
+}

@@ -103,3 +103,23 @@ body {
     transform: scale(1.05); /* Hace que la burbuja se haga ligeramente grande */
     background-color: #e4f8f6; /* Cambia el color de fondo al pasar el cursor */
 }
+
+#header-text{
+    color: #ffffff; /* Color del texto del encabezado */
+}
+
+section {
+    text-align: center; /* Centrar el contenido */
+    max-width: 700px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar la sección en la página */
+}
+h1 {
+    font-size: 32px; /* Tamaño de la fuente del encabezado */
+    color: #333; /* Color del texto del encabezado */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+p {
+    font-size: 18px; /* Tamaño de la fuente del párrafo */
+    color: #666; /* Color del texto del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas */
+}

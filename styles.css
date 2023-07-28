@@ -49,11 +49,32 @@ body {
     text-align: center;
 }
 
+/* Estilos base para todos los tamaños de pantalla */
 .networks {
     text-align: center;
     margin-top: 20px;
 }
 
+/* Estilos para dispositivos móviles con pantallas de hasta 767px de ancho */
+@media (max-width: 767px) {
+    .networks a {
+        display: block;
+        margin: 10px auto;
+        text-decoration: none;
+        text-align: center;
+        width: 80%; /* Ancho del contenedor de cada ícono y texto */
+    }
+
+    /* Ajustar el tamaño de las imágenes en dispositivos móviles */
+    .networks img {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0 auto 5px; /* Espacio entre imagen y texto */
+    }
+}
+
+/* Estilos para pantallas de escritorio */
 .networks a {
     display: inline-block; /* Convertir los enlaces en bloques para que el texto aparezca debajo */
     margin: 10px;
@@ -62,10 +83,10 @@ body {
     width: 100px; /* Ancho del contenedor de cada ícono y texto */
 }
 
-/* Ajustar el tamaño de las imágenes */
+/* Ajustar el tamaño de las imágenes en pantallas de escritorio */
 .networks img {
     width: 50px; /* Ancho de la imagen */
     height: 50px; /* Alto de la imagen */
     display: block; /* Convertir las imágenes en bloques para que se muestren en línea */
-    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    margin: 0 auto 5px; /* Centrar las imágenes horizontalmente */
 }

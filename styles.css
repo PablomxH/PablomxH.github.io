@@ -55,11 +55,17 @@ body {
 }
 
 .networks a {
-    color: #333;
-    margin: 0 10px;
-    font-size: 24px;
+    display: inline-block; /* Convertir los enlaces en bloques para que el texto aparezca debajo */
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 100px; /* Ancho del contenedor de cada ícono y texto */
 }
+
+/* Ajustar el tamaño de las imágenes */
 .networks img {
     width: 50px; /* Ancho de la imagen */
     height: 50px; /* Alto de la imagen */
+    display: block; /* Convertir las imágenes en bloques para que se muestren en línea */
+    margin: 0 auto; /* Centrar las imágenes horizontalmente */
 }

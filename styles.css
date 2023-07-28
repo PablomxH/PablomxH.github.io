@@ -123,3 +123,72 @@ p {
     color: #666; /* Color del texto del párrafo */
     line-height: 1.6; /* Espaciado entre líneas */
 }
+
+/* Estilos generales para la sidebar */
+#sidebar {
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.bar {
+    margin-top: 20px;
+}
+
+.menu {
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces dentro de la sidebar */
+.menu a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el elemento "mini" */
+.mini {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 28px;
+    margin-right: -10px; /* Agrega un margen para separar el círculo del texto */
+    margin-bottom: 70px; /* Margen inferior para separar verticalmente los elementos */
+    transition: all 0.3s ease;
+    z-index: 1; /* Agregamos z-index para que el elemento esté sobre el texto */
+}
+.mini:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(25%); /* Centramos verticalmente el círculo */
+    display: block;
+    border-radius: 28px;
+    background: #a9a9a9;
+    width: 46px;
+    height: 46px;
+    transition: all 0.3s ease;
+    z-index: -1; /* Agregamos z-index negativo para que esté detrás del texto */
+}
+.mini span {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.mini:hover:before {
+    width: 100%;
+    background: #a9a9a9;
+  }
+
+.mini:active {
+    transform: scale(0.96);
+  }

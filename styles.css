@@ -17,6 +17,7 @@ body {
 
 #sidebar {
     width: 250px;
+    height: 100vh; /* Ajustar el alto al 100% del viewport height */
     background-color: #f1f1f1;
     padding: 20px;
 }

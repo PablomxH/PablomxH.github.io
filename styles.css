@@ -219,19 +219,19 @@ p {
     }
 }
 
-/* Estilos para pantallas de escritorio */
+/* Estilos para tech stack */
 .techs a {
     display: inline-block; /* Convertir los enlaces en bloques para que el texto aparezca debajo */
-    margin: 10px;
+    margin: 5px;
     text-decoration: none;
     text-align: center;
     width: 100px; /* Ancho del contenedor de cada ícono y texto */
 }
 
-/* Ajustar el tamaño de las imágenes en pantallas de escritorio */
+/* Ajustar el tamaño de las imágenes en techstack */
 .techs img {
-    width: 50px; /* Ancho de la imagen */
-    height: 50px; /* Alto de la imagen */
+    width: 150px; /* Ancho de la imagen */
+    height: 150px; /* Alto de la imagen */
     display: block; /* Convertir las imágenes en bloques para que se muestren en línea */
     margin: 0 auto 5px; /* Centrar las imágenes horizontalmente */
 }
@@ -239,16 +239,10 @@ p {
 .techsquare {
     background-color: #eeeeee; /* Color de fondo de la burbuja */
     padding: 25px;
-    height: 130px;
-    width: 120px;
+    height: 250px;
+    width: 200px;
     margin: 5px; /* Margen entre los elementos */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); /* Agregar sombra */
-}
-
-.techsquare:hover {
-    transform: scale(1.05); /* Hace que la burbuja se haga ligeramente grande */
-    background-color: #e4f8f6; /* Cambia el color de fondo al pasar el cursor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Aumenta la sombra al pasar el cursor */
 }
 
 .techs {

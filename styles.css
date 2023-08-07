@@ -1,3 +1,18 @@
+/* Estilos para dispositivos móviles con pantallas de hasta 767px de ancho */
+@media (max-width: 767px) {
+  #sidebar {
+    display: none; /* Oculta la sidebar en dispositivos móviles */
+    
+}
+#content {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px;
+}
+.buttons {
+  display: none;
+}
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -54,25 +69,6 @@ body {
 .networks {
     text-align: center;
     margin-top: 20px;
-}
-
-/* Estilos para dispositivos móviles con pantallas de hasta 767px de ancho */
-@media (max-width: 767px) {
-    .networks a {
-        display: block;
-        margin: 10px auto;
-        text-decoration: none;
-        text-align: center;
-        width: 80%; /* Ancho del contenedor de cada ícono y texto */
-    }
-
-    /* Ajustar el tamaño de las imágenes en dispositivos móviles */
-    .networks img {
-        width: 40px;
-        height: 40px;
-        display: block;
-        margin: 0 auto 5px; /* Espacio entre imagen y texto */
-    }
 }
 
 /* Estilos para pantallas de escritorio */
@@ -192,42 +188,6 @@ p {
 
 .mini:active {
     transform: scale(0.96);
-  }
-
-/* Estilos para dispositivos móviles con pantallas de hasta 767px de ancho */
-@media (max-width: 767px) {
-    /* Estilos para el contenedor principal de educación (main_shield) */
-    .main_shield {
-      display: block; /* Cambiamos a bloque para que los elementos aparezcan uno debajo del otro */
-    }
-    /* Ajustar el tamaño de las imágenes en dispositivos móviles */
-    .shield_box img {
-      width: 160px;
-      height: 160px;
-      margin-bottom: 10px;
-    }
-    /* Estilos para el título dentro de shield_box en dispositivos móviles */
-    .shield_box_title {
-      font-size: 30px;
-    }
-    /* Estilos para el subtítulo dentro de shield_box en dispositivos móviles */
-    .shield_box span {
-      font-size: 20px;
-    }
-    /* Ajustar el tamaño de las imágenes en dispositivos móviles */
-    .techs img {
-      width: 60px;
-      height: 60px;
-      margin: 0 auto 5px; /* Espacio entre imagen y texto */
-    }
-    /* Estilos para el título dentro de techsquare en dispositivos móviles */
-    .techsquare_title {
-      font-size: 14px;
-    }
-    /* Estilos para el texto dentro de techsquare en dispositivos móviles */
-    .techsquare span {
-      font-size: 12px;
-    }
   }
 
 /* Estilos para tech stack */

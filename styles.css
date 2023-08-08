@@ -11,13 +11,41 @@
 .buttons {
   display: none;
 }
-.main_shield {
-    display: flex;
-    justify-content: center;
-    overflow-x: auto; /* Agrega un scroll horizontal si los elementos no caben */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 100%;
-  }
+/* Estilos para el contenedor de educación (shield) */
+.shield {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada caja de educación (shield_box) */
+.shield_box {
+  background-color: #f1f1f1;
+  padding: 15px;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Estilos para las imágenes dentro de shield_box */
+.shield_box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el título dentro de shield_box */
+.shield_box_title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Estilos para el subtítulo dentro de shield_box */
+.shield_box span {
+  display: block;
+  font-size: 14px;
+}
 }
 
 body {

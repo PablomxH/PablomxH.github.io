@@ -11,6 +11,13 @@
 .buttons {
   display: none;
 }
+.main_shield {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* Agrega un scroll horizontal si los elementos no caben */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100%;
+  }
 }
 
 body {

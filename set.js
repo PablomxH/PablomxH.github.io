@@ -6,7 +6,15 @@ const education = document.getElementById('education2');
 const projects = document.getElementById('projects2');
 
 // Agrega una verificación para el ancho de la pantalla antes de asignar los eventos
-if (window.innerWidth < 767) {
+if (window.innerWidth > 767) {
+    //Botones de la pagina
+    const mystack = document.getElementById("Pablostack")
+    const aboutit = document.getElementById("PabloAbout")
+    const profeedu = document.getElementById("PabloEdu")
+    const proyects = document.getElementById("PabloPro")
+
+    window.addEventListener('load', iniciarPortafolio);
+
     mystack.addEventListener("click", techstack);
     aboutit.addEventListener("click", iniciarPortafolio);
     profeedu.addEventListener("click", edu);

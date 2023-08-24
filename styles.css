@@ -301,3 +301,39 @@ p {
     display: block;
     font-size: 20px;
   }
+
+  /*Projects
+/* Estilos para el contenedor de projectos */
+
+.projects2 {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+}
+.main_projects{
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+.main_projects img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: .5s ease;
+}
+.main_projects img:hover{
+  width: 500px;
+  opacity: 1;
+  filter: contrast(120%)
+}
+
+  /*About_Projects
+/* Estilos para el contenedor de projectos */
+
+.about_projects {
+  display: flex;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+}

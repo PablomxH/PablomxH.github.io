@@ -53,3 +53,23 @@ function proj(){
     projects.style.display = "block";
 }
 
+const projectLinks = {
+    project1: 'https://github.com/PablomxH/COVID19-Data-Analysis-Using-Python/blob/main/covid19%20data%20analysis%20notebook.ipynb',
+    project2: 'https://www.youtube.com/watch?v=CGp1Erx5beU',
+    project3: 'https://github.com/PablomxH/opencv',
+    project4: 'https://www.link4.com'
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.main_projects img');
+    
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            const imageId = image.getAttribute('id');
+            const link = projectLinks[imageId];
+            if (link) {
+                window.open(link, '_blank');
+            }
+        });
+    });
+});

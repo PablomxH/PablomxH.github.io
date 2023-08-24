@@ -46,6 +46,47 @@
   display: block;
   font-size: 14px;
 }
+/*Projects
+/* Estilos para el contenedor de projectos */
+
+.projects2 {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+}
+.main_projects{
+  display: flex;
+  width: 100%;
+  height: auto; /* Ajustar la altura automáticamente */
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+}
+.main_projects img {
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+  height: auto; /* Ajustar la altura automáticamente */
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: .5s ease;
+  margin: 5px; /* Agregar un pequeño margen entre las imágenes */
+}
+.main_projects img:hover{
+  width: 100%; /* Ajustar el ancho al 100% del contenedor al hacer hover */
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*About_Projects
+/* Estilos para el contenedor de projectos */
+
+.about_projects {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+  max-width: 160px; /* Establecer un ancho máximo */
+  height: 160px;
+  margin: 10px auto; /* Centrar y agregar espacio entre los elementos */
+}
 }
 
 body {

@@ -87,6 +87,12 @@
   height: 160px;
   margin: 10px auto; /* Centrar y agregar espacio entre los elementos */
 }
+
+.perfil {
+  width: 150px; /* Reducir el tamaño de la imagen en dispositivos móviles */
+  height: 150px;
+  margin: 5px auto; /* Reducir el margen en dispositivos móviles */
+}
 }
 
 body {
@@ -377,4 +383,13 @@ p {
   justify-content: center;
   width: 160px;
   height: 160px;
+}
+
+.perfil {
+  width: 250px;
+  height: 250px;
+  border-radius: 45%; /* Hace que la imagen sea ovalada */
+  object-fit: cover;
+  margin: 10px auto; /* Centrar la imagen y agregar margen */
+  display: block; /* Hace que la imagen sea un bloque para poder centrarla */
 }

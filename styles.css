@@ -389,7 +389,7 @@ p {
 .perfil {
   width: 250px;
   height: 250px;
-  border-radius: 45%; /* Hace que la imagen sea ovalada */
+  border-radius: 100%; /* Hace que la imagen sea ovalada */
   object-fit: cover;
   margin: 10px auto; /* Centrar la imagen y agregar margen */
   display: block; /* Hace que la imagen sea un bloque para poder centrarla */
@@ -416,12 +416,12 @@ td:first-child {
 }
 
 /* Estilos para los enlaces */
-a {
+.links {
   color: #3498db;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-a:hover {
+.links:hover {
   color: #e74c3c;
 }

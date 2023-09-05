@@ -239,7 +239,7 @@ p {
     border-radius: 28px;
     margin-right: -10px; /* Agrega un margen para separar el círculo del texto */
     margin-bottom: 70px; /* Margen inferior para separar verticalmente los elementos */
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     z-index: 1; /* Agregamos z-index para que el elemento esté sobre el texto */
 }
 .mini:before {
@@ -269,9 +269,26 @@ p {
     background: #a9a9a9;
   }
 
-.mini:active {
-    transform: scale(0.96);
-  }
+/* Estilos para el elemento "mini" cuando está activo */
+.mini.active {
+  background-color: #5e5e5e; /* Color de fondo cuando está activo */
+  color: white; /* Color del texto cuando está activo */
+  padding-left: 30px; /* Ancho del círculo cuando está activo */
+}
+
+/* Agrega estilos para el círculo cuando está activo */
+.mini.active::before {
+  content: "";
+  position: absolute;
+  width: 20px; /* Ancho del círculo cuando está activo */
+  height: 20px; /* Alto del círculo cuando está activo */
+  background-color: #5e5e5e; /* Color de fondo del círculo cuando está activo */
+  border-radius: 50%; /* Forma de círculo */
+  left: 5px; /* Alinea el círculo a la izquierda */
+  top: 50%; /* Alinea el círculo verticalmente al centro */
+  transform: translateY(-50%); /* Alinea verticalmente el círculo al centro */
+  transition: all 0.3s ease;
+}
 
 /* Estilos para tech stack */
 .techs {

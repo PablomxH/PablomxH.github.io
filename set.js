@@ -73,3 +73,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtén todos los elementos "mini" del menú
+    const miniItems = document.querySelectorAll('.mini');
+
+    // Agrega un controlador de eventos clic para cada elemento
+    miniItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            console.log('Elemento clicado'); // Agrega esta línea para verificar si se detecta el clic
+            // Elimina la clase "active" de todos los elementos "mini"
+            miniItems.forEach(function(mini) {
+                mini.classList.remove('active');
+            });
+
+            // Agrega la clase "active" al elemento clicado
+            item.classList.add('active');
+        });
+    });
+});

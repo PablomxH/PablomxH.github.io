@@ -92,3 +92,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Oculta el preloader cuando la página esté completamente cargada
+document.addEventListener('DOMContentLoaded', function () {
+    // Encuentra el preloader y lo oculta
+    const preloader = document.querySelector('.preloader-container');
+    preloader.style.display = 'none';
+});

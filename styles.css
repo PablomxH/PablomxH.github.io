@@ -442,3 +442,56 @@ td:first-child {
 .links:hover {
   color: #e74c3c;
 }
+
+.credits {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.credits p {
+  margin: 5px;
+}
+
+.credits p:first-child {
+  font-size: 12px; /* Tamaño de fuente más pequeño para el primer párrafo */
+  font-weight: bold; /* Texto en negrita para el primer párrafo */
+}
+
+.credits p:last-child {
+  font-size: 10px; /* Tamaño de fuente más pequeño para el último párrafo */
+}
+
+/* Estilo para el preloader */
+.preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que esté por encima de todo el contenido */
+}
+
+/* Estilo para el círculo de carga */
+.loader {
+  border: 5px solid #3498db; /* Color del círculo */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: scaleUpDown 1s ease-in-out infinite alternate; /* Animación para escalar los círculos */
+  margin: 10px; /* Espacio entre círculos */
+}
+
+@keyframes scaleUpDown {
+  0%, 100% {
+    transform: scale(1); /* Tamaño normal */
+    border: 5px solid #3498db; /* Color del círculo */
+  }
+  50% {
+    transform: scale(1.2); /* Tamaño aumentado */
+    border: 5px solid #ffffff; /* Color del fondo del círculo */
+  }
+}

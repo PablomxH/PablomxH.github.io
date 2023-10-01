@@ -1,153 +1,149 @@
-/* Estilos para dispositivos móviles con pantallas de hasta 767px de ancho */
-@media (max-width: 767px) {
-  #sidebar {
-    display: none; /* Oculta la sidebar en dispositivos móviles */
-    
-}
-#content {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 20px;
-}
-.buttons {
-  display: none;
-}
-/* Estilos para el contenedor de educación (shield) */
-.shield {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Estilos para cada caja de educación (shield_box) */
-.shield_box {
-  background-color: #f1f1f1;
-  padding: 15px;
-  width: 150px;
-  margin: 10px;
-  text-align: center;
-}
-
-/* Estilos para las imágenes dentro de shield_box */
-.shield_box img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-/* Estilos para el título dentro de shield_box */
-.shield_box_title {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* Estilos para el subtítulo dentro de shield_box */
-.shield_box span {
-  display: block;
-  font-size: 14px;
-}
-/*Projects
-/* Estilos para el contenedor de projectos */
-
-.projects2 {
-  display: flex;
-  justify-content: center;
-  width: 100%; /* Ajustar el ancho al 100% del contenedor */
-  flex-wrap: wrap;
-  overflow-x: hidden;
-}
-.main_projects{
-  display: flex;
-  width: 100%;
-  height: auto; /* Ajustar la altura automáticamente */
-  flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
-}
-.main_projects img {
-  width: 100%; /* Ajustar el ancho al 100% del contenedor */
-  height: auto; /* Ajustar la altura automáticamente */
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: .5s ease;
-  margin: 5px; /* Agregar un pequeño margen entre las imágenes */
-}
-.main_projects img:hover{
-  width: 100%; /* Ajustar el ancho al 100% del contenedor al hacer hover */
-  opacity: 1;
-  filter: contrast(120%);
-}
-
-/*About_Projects
-/* Estilos para el contenedor de projectos */
-.about_projects {
-  flex-direction: column; /* Apilar las imágenes verticalmente */
-  align-items: center; /* Centrar horizontalmente las imágenes */
-}
-.about_projects img {
-  max-width: 100%; /* Las imágenes ocupan todo el ancho disponible */
-  margin: 10px 0; /* Espacio vertical entre las imágenes */
-}
-.perfil {
-  width: 150px; /* Reducir el tamaño de la imagen en dispositivos móviles */
-  height: 150px;
-  margin: 5px auto; /* Reducir el margen en dispositivos móviles */
-}
-}
-/* Generales */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-section {
-  text-align: center; /* Centrar el contenido */
-}
-
-/* Estilos para el contenedor principal */
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* Altura del 100% de la ventana */
-}
+  /* Estilos para dispositivos móviles con pantallas de hasta 767px de ancho */
+  @media (max-width: 767px) {
+    #sidebar {
+      display: none; /* Oculta la sidebar en dispositivos móviles */
+      
+  }
+  #content {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      padding: 20px;
+  }
+  .buttons {
+    display: none;
+  }
+  /* Estilos para el contenedor de educación (shield) */
+  .shield {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  /* Estilos para cada caja de educación (shield_box) */
+  .shield_box {
+    background-color: #f1f1f1;
+    padding: 15px;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+  }
+  /* Estilos para las imágenes dentro de shield_box */
+  .shield_box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  /* Estilos para el título dentro de shield_box */
+  .shield_box_title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  /* Estilos para el subtítulo dentro de shield_box */
+  .shield_box span {
+    display: block;
+    font-size: 14px;
+  }
+  /*Projects
+  /* Estilos para el contenedor de projectos */
+  .projects2 {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+  .main_projects{
+    display: flex;
+    width: 100%;
+    height: auto; /* Ajustar la altura automáticamente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+  }
+  .main_projects img {
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    height: auto; /* Ajustar la altura automáticamente */
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+    margin: 5px; /* Agregar un pequeño margen entre las imágenes */
+  }
+  .main_projects img:hover{
+    width: 100%; /* Ajustar el ancho al 100% del contenedor al hacer hover */
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  /*About_Projects
+  /* Estilos para el contenedor de projectos */
+  .about_projects {
+    flex-direction: column; /* Apilar las imágenes verticalmente */
+    align-items: center; /* Centrar horizontalmente las imágenes */
+  }
+  .about_projects img {
+    max-width: 100%; /* Las imágenes ocupan todo el ancho disponible */
+    margin: 10px 0; /* Espacio vertical entre las imágenes */
+  }
+  .perfil {
+    width: 150px; /* Reducir el tamaño de la imagen en dispositivos móviles */
+    height: 150px;
+    margin: 5px auto; /* Reducir el margen en dispositivos móviles */
+  }
+  }
 
 
-/* Estilos para el encabezado superior */
-header {
-background-color: #04080f;
-color: #fff;
-padding: 20px;
-text-align: center;
-}
-#header-text{
-color: #ffffff; /* Color del texto del encabezado */
-}
-/* Estilos para el contenedor de barra lateral y contenido */
-.content-container {
-display: flex;
-flex-grow: 1;
-}
+  /* Generales */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  section {
+    text-align: center; /* Centrar el contenido */
+  }
 
-/* Estilos para la barra lateral izquierda */
-aside {
-  width: 250px;
-  background-color: #BBD1EA;
+  /* Estilos para el contenedor principal */
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Altura del 100% de la ventana */
+  }
+
+
+  /* Estilos para el encabezado superior */
+  header {
+  background-color: #04080f;
+  color: #fff;
   padding: 20px;
-}
-.bar {
-  margin-top: 20px;
-}
-.menu {
-  margin-bottom: 10px;
-}
-/* Estilos para los enlaces dentro de la sidebar */
-.menu a {
-  display: block;
-  padding: 10px;
-  font-size: 18px;
-  color: #333;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
+  text-align: center;
+  }
+  #header-text{
+  color: #ffffff; /* Color del texto del encabezado */
+  }
+  /* Estilos para el contenedor de barra lateral y contenido */
+  .content-container {
+  display: flex;
+  flex-grow: 1;
+  }
+
+  /* Estilos para la barra lateral izquierda */
+  aside {
+    width: 250px;
+    background-color: #BBD1EA;
+    padding: 20px;
+  }
+  .bar {
+    margin-top: 20px;
+  }
+  .menu {
+    margin-bottom: 10px;
+  }
+  /* Estilos para los enlaces dentro de la sidebar */
+  .menu a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
 
 /* Estilos para el elemento "mini" */
 .mini {
@@ -406,16 +402,21 @@ cursor: pointer; /* Cambiar el cursor a una mano cuando se pasa el ratón sobre 
 #p3, #p5 {
   background-color: #dafbda
 }
-#readmore {
-  font-weight: bold; /* Hace que el texto sea negrita */
-  color: #007BFF; /* Cambia el color del texto */
-  text-decoration: none; /* Quita la subraya del enlace (si es un enlace) */
-  cursor: pointer; /* Cambia el cursor al estilo de mano para indicar que es un enlace o botón */
-  transition: color 0.3s; /* Agrega una transición suave al color al pasar el mouse por encima */
-}
-#readmore:hover {
-  color: #0056b3; /* Cambia el color al pasar el mouse por encima */
-}
+
+  /* Estilo para los botones "Read more" */
+  #readmore a {
+    display: inline-block; /* Hacer que los enlaces se muestren en línea horizontalmente */
+    margin-right: 10px; /* Agregar un espacio entre los botones */
+    padding: 10px 20px; /* Ajustar el espacio interno (arriba y abajo, izquierda y derecha) */
+    background-color: #3498db; /* Cambiar el color de fondo */
+    color: #fff; /* Cambiar el color del texto */
+    text-decoration: none; /* Quitar la subrayado de los enlaces */
+    border-radius: 5px; /* Agregar bordes redondeados */
+    transition: background-color 0.3s ease; /* Agregar una transición suave al color de fondo */
+  }
+  #readmore a:hover {
+    background-color: #2980b9; /* Cambiar el color de fondo al pasar el ratón sobre los enlaces */
+  }
 
 
 /*More Projects

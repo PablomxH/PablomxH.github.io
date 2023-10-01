@@ -191,7 +191,7 @@ aside {
 
 /* Estilos para el elemento "mini" cuando está activo */
 .mini.active {
-  background-color: #5e5e5e; /* Color de fondo cuando está activo */
+  background-color: #507DBC; /* Color de fondo cuando está activo */
   color: white; /* Color del texto cuando está activo */
   padding-left: 30px; /* Ancho del círculo cuando está activo */
 }
@@ -202,7 +202,7 @@ aside {
   position: absolute;
   width: 20px; /* Ancho del círculo cuando está activo */
   height: 20px; /* Alto del círculo cuando está activo */
-  background-color: #5e5e5e; /* Color de fondo del círculo cuando está activo */
+  background-color: #507DBC; /* Color de fondo del círculo cuando está activo */
   border-radius: 50%; /* Forma de círculo */
   left: 5px; /* Alinea el círculo a la izquierda */
   top: 50%; /* Alinea el círculo verticalmente al centro */

@@ -4,10 +4,11 @@ const about = document.getElementById('about2');
 const stack = document.getElementById('stack2');
 const education = document.getElementById('education2');
 const projects = document.getElementById('projects2');
-
+console.log('Listo1');
 // Agrega una verificación para el ancho de la pantalla antes de asignar los eventos
 if (window.innerWidth > 767) {
     //Botones de la pagina
+    console.log('Listo2');
     const mystack = document.getElementById("Pablostack")
     const aboutit = document.getElementById("PabloAbout")
     const profeedu = document.getElementById("PabloEdu")

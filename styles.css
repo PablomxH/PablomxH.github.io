@@ -190,8 +190,6 @@ body {
 
 section {
     text-align: center; /* Centrar el contenido */
-    max-width: 700px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centrar la sección en la página */
 }
 h1 {
     font-size: 32px; /* Tamaño de la fuente del encabezado */

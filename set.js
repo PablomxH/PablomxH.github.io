@@ -58,7 +58,7 @@ const projectLinks = {
     project1: 'https://github.com/PablomxH/COVID19-Data-Analysis-Using-Python/blob/main/covid19%20data%20analysis%20notebook.ipynb',
     project2: 'https://www.youtube.com/watch?v=CGp1Erx5beU',
     project3: 'https://github.com/PablomxH/opencv',
-    project4: 'https://github.com/PablomxH'
+    project4: 'https://github.com/PablomxH/Pokemon_gameweb'
 };
 
 document.addEventListener('DOMContentLoaded', function() {

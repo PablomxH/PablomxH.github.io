@@ -1,3 +1,98 @@
+/* Estilos para dispositivos móviles con pantallas de hasta 767px de ancho */
+@media (max-width: 767px) {
+  #sidebar {
+    display: none; /* Oculta la sidebar en dispositivos móviles */
+    
+}
+#content {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 20px;
+}
+.buttons {
+  display: none;
+}
+/* Estilos para el contenedor de educación (shield) */
+.shield {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada caja de educación (shield_box) */
+.shield_box {
+  background-color: #f1f1f1;
+  padding: 15px;
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Estilos para las imágenes dentro de shield_box */
+.shield_box img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el título dentro de shield_box */
+.shield_box_title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Estilos para el subtítulo dentro de shield_box */
+.shield_box span {
+  display: block;
+  font-size: 14px;
+}
+/*Projects
+/* Estilos para el contenedor de projectos */
+
+.projects2 {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+.main_projects{
+  display: flex;
+  width: 100%;
+  height: auto; /* Ajustar la altura automáticamente */
+  flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+}
+.main_projects img {
+  width: 100%; /* Ajustar el ancho al 100% del contenedor */
+  height: auto; /* Ajustar la altura automáticamente */
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: .5s ease;
+  margin: 5px; /* Agregar un pequeño margen entre las imágenes */
+}
+.main_projects img:hover{
+  width: 100%; /* Ajustar el ancho al 100% del contenedor al hacer hover */
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*About_Projects
+/* Estilos para el contenedor de projectos */
+.about_projects {
+  flex-direction: column; /* Apilar las imágenes verticalmente */
+  align-items: center; /* Centrar horizontalmente las imágenes */
+}
+.about_projects img {
+  max-width: 100%; /* Las imágenes ocupan todo el ancho disponible */
+  margin: 10px 0; /* Espacio vertical entre las imágenes */
+}
+.perfil {
+  width: 150px; /* Reducir el tamaño de la imagen en dispositivos móviles */
+  height: 150px;
+  margin: 5px auto; /* Reducir el margen en dispositivos móviles */
+}
+}
 /* Generales */
 body {
   margin: 0;

@@ -1,271 +1,98 @@
-/* Estilos para dispositivos móviles con pantallas de hasta 767px de ancho */
-@media (max-width: 767px) {
-  #sidebar {
-    display: none; /* Oculta la sidebar en dispositivos móviles */
-    
+/* Generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-#content {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 20px;
+section {
+  text-align: center; /* Centrar el contenido */
 }
-.buttons {
-  display: none;
-}
-/* Estilos para el contenedor de educación (shield) */
-.shield {
+
+/* Estilos para el contenedor principal */
+.container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh; /* Altura del 100% de la ventana */
 }
 
-/* Estilos para cada caja de educación (shield_box) */
-.shield_box {
-  background-color: #f1f1f1;
-  padding: 15px;
-  width: 150px;
-  margin: 10px;
-  text-align: center;
+
+/* Estilos para el encabezado superior */
+header {
+background-color: #04080f;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+#header-text{
+color: #ffffff; /* Color del texto del encabezado */
+}
+/* Estilos para el contenedor de barra lateral y contenido */
+.content-container {
+display: flex;
+flex-grow: 1;
 }
 
-/* Estilos para las imágenes dentro de shield_box */
-.shield_box img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+/* Estilos para la barra lateral izquierda */
+aside {
+  width: 250px;
+  background-color: #BBD1EA;
+  padding: 20px;
+}
+.bar {
+  margin-top: 20px;
+}
+.menu {
   margin-bottom: 10px;
 }
-
-/* Estilos para el título dentro de shield_box */
-.shield_box_title {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* Estilos para el subtítulo dentro de shield_box */
-.shield_box span {
-  display: block;
-  font-size: 14px;
-}
-/*Projects
-/* Estilos para el contenedor de projectos */
-
-.projects2 {
-  display: flex;
-  justify-content: center;
-  width: 100%; /* Ajustar el ancho al 100% del contenedor */
-  flex-wrap: wrap;
-  overflow-x: hidden;
-}
-.main_projects{
-  display: flex;
-  width: 100%;
-  height: auto; /* Ajustar la altura automáticamente */
-  flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
-}
-.main_projects img {
-  width: 100%; /* Ajustar el ancho al 100% del contenedor */
-  height: auto; /* Ajustar la altura automáticamente */
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: .5s ease;
-  margin: 5px; /* Agregar un pequeño margen entre las imágenes */
-}
-.main_projects img:hover{
-  width: 100%; /* Ajustar el ancho al 100% del contenedor al hacer hover */
-  opacity: 1;
-  filter: contrast(120%);
-}
-
-/*About_Projects
-/* Estilos para el contenedor de projectos */
-
-.about_projects {
-  display: flex;
-  justify-content: center;
-  width: 100%; /* Ajustar el ancho al 100% del contenedor */
-  max-width: 160px; /* Establecer un ancho máximo */
-  height: 160px;
-  margin: 10px auto; /* Centrar y agregar espacio entre los elementos */
-}
-
-.perfil {
-  width: 150px; /* Reducir el tamaño de la imagen en dispositivos móviles */
-  height: 150px;
-  margin: 5px auto; /* Reducir el margen en dispositivos móviles */
-}
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-#header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-#container {
-    display: flex;
-}
-
-#sidebar {
-    width: 250px;
-    height: 100vh; /* Ajustar el alto al 100% del viewport height */
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-#content {
-    flex: 1;
-    padding: 20px;
-}
-
-#sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-#sidebar li {
-    margin-bottom: 10px;
-}
-
-#sidebar li a {
-    color: #333;
-    text-decoration: none;
-    display: block;
-}
-
-#sidebar li a:hover {
-    background-color: #ddd;
-}
-
-.title {
-    text-align: center;
-}
-
-/* Estilos base para todos los tamaños de pantalla */
-.networks {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Estilos para pantallas de escritorio */
-.networks a {
-    display: inline-block; /* Convertir los enlaces en bloques para que el texto aparezca debajo */
-    margin: 10px;
-    text-decoration: none;
-    text-align: center;
-    width: 100px; /* Ancho del contenedor de cada ícono y texto */
-}
-
-/* Ajustar el tamaño de las imágenes en pantallas de escritorio */
-.networks img {
-    width: 50px; /* Ancho de la imagen */
-    height: 50px; /* Alto de la imagen */
-    display: block; /* Convertir las imágenes en bloques para que se muestren en línea */
-    margin: 0 auto 5px; /* Centrar las imágenes horizontalmente */
-}
-
-.bubble {
-    background-color: #ffff; /* Color de fondo de la burbuja */
-    padding: 25px;
-    border-radius: 100px;
-    display: inline-block; /* Hace que la burbuja se ajuste al contenido */
-    height: 100px;
-    width: 120px;
-}
-.bubble:hover {
-    transform: scale(1.05); /* Hace que la burbuja se haga ligeramente grande */
-    background-color: #e4f8f6; /* Cambia el color de fondo al pasar el cursor */
-}
-
-#header-text{
-    color: #ffffff; /* Color del texto del encabezado */
-}
-
-section {
-    text-align: center; /* Centrar el contenido */
-}
-h1 {
-    font-size: 32px; /* Tamaño de la fuente del encabezado */
-    color: #333; /* Color del texto del encabezado */
-    margin-bottom: 20px; /* Espaciado inferior */
-}
-p {
-    font-size: 18px; /* Tamaño de la fuente del párrafo */
-    color: #666; /* Color del texto del párrafo */
-    line-height: 1.6; /* Espaciado entre líneas */
-}
-
-/* Estilos generales para la sidebar */
-#sidebar {
-    width: 250px;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-.bar {
-    margin-top: 20px;
-}
-
-.menu {
-    margin-bottom: 10px;
-}
-
 /* Estilos para los enlaces dentro de la sidebar */
 .menu a {
-    display: block;
-    padding: 10px;
-    font-size: 18px;
-    color: #333;
-    text-decoration: none;
-    transition: background-color 0.3s;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 /* Estilos para el elemento "mini" */
 .mini {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    color: #333;
-    padding: 10px;
-    border-radius: 28px;
-    margin-right: -10px; /* Agrega un margen para separar el círculo del texto */
-    margin-bottom: 70px; /* Margen inferior para separar verticalmente los elementos */
-    transition: all 0.2s ease;
-    z-index: 1; /* Agregamos z-index para que el elemento esté sobre el texto */
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  border-radius: 28px;
+  margin-right: -10px; /* Agrega un margen para separar el círculo del texto */
+  margin-bottom: 70px; /* Margen inferior para separar verticalmente los elementos */
+  transition: all 0.2s ease;
+  z-index: 1; /* Agregamos z-index para que el elemento esté sobre el texto */
 }
 .mini:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(25%); /* Centramos verticalmente el círculo */
-    display: block;
-    border-radius: 28px;
-    background: #a9a9a9;
-    width: 46px;
-    height: 46px;
-    transition: all 0.3s ease;
-    z-index: -1; /* Agregamos z-index negativo para que esté detrás del texto */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(25%); /* Centramos verticalmente el círculo */
+  display: block;
+  border-radius: 28px;
+  background: #507DBC;
+  width: 46px;
+  height: 46px;
+  transition: all 0.3s ease;
+  z-index: -1; /* Agregamos z-index negativo para que esté detrás del texto */
 }
 .mini span {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 900;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    vertical-align: middle;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 .mini:hover:before {
-    width: 100%;
-    background: #a9a9a9;
-  }
+  width: 100%;
+  background: #A1C6EA;
+}
 
 /* Estilos para el elemento "mini" cuando está activo */
 .mini.active {
@@ -288,119 +115,44 @@ p {
   transition: all 0.3s ease;
 }
 
-/* Estilos para tech stack */
-.techs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
-/* Estilos para cada techsquare */
-.techsquare {
-  background-color: #eeeeee;
-  padding: 25px;
-  width: 220px;
-  margin: 10px;
-  text-align: center;
-}
 
-/* Estilos para las imágenes dentro de techsquare */
-.techsquare img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-/* Estilos para la clase techsquare_title */
-.techsquare_title {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* Estilos para el texto dentro de techsquare */
-.techsquare span {
-  display: block;
-  font-size: 14px;
-}
-
-/*Profesional Education
-/* Estilos para el contenedor de educación (shield) */
-
-.main_shield {
-    display: flex;
-    justify-content: center;
-    width: auto; /* Ajuste automático al contenido */
-  }
-
-.shield {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Estilos para cada caja de educación (shield_box) */
-  .shield_box {
-    background-color: #f1f1f1;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  /* Estilos para las imágenes dentro de shield_box */
-  .shield_box img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilos para el título dentro de shield_box */
-  .shield_box_title {
-    font-weight: bold;
-    font-size: 30px;
-  }
-  
-  /* Estilos para el subtítulo dentro de shield_box */
-  .shield_box span {
-    display: block;
-    font-size: 20px;
-  }
-
-  /*Projects
-/* Estilos para el contenedor de projectos */
-
-.projects2 {
-  display: flex;
-  justify-content: center;
-  width: 100%; /* Ajustar el ancho al 100% del contenedor */
-}
-.main_projects{
-  display: flex;
-  width: 100%;
-  height: 500px;
-}
-.main_projects img {
-  width: 0px;
+/* Estilos para el contenido principal */
+main {
   flex-grow: 1;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: .5s ease;
-}
-.main_projects img:hover{
-  width: 500px;
-  opacity: 1;
-  filter: contrast(120%)
-}
-
-  /*About_Projects
-/* Estilos para el contenedor de projectos */
-
-.about_projects {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
-  width: 160px;
-  height: 160px;
+  flex-direction: column;
+}
+.uno {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.tres, .cinco {
+  flex-grow: 1;
+  background-color: #DAE3E5;
+  padding: 20px;
+}
+.dos,.cuatro {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
+}
+h1 {
+  font-size: 32px; /* Tamaño de la fuente del encabezado */
+  color: #333; /* Color del texto del encabezado */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+p {
+  font-size: 18px; /* Tamaño de la fuente del párrafo */
+  color: #666; /* Color del texto del párrafo */
+  line-height: 1.6; /* Espaciado entre líneas */
 }
 
+
+/*About me*/
 .perfil {
   width: 250px;
   height: 250px;
@@ -409,87 +161,209 @@ p {
   margin: 10px auto; /* Centrar la imagen y agregar margen */
   display: block; /* Hace que la imagen sea un bloque para poder centrarla */
 }
+.bubble {
+  background-color: #ffff; /* Color de fondo de la burbuja */
+  padding: 25px;
+  border-radius: 100px;
+  display: inline-block; /* Hace que la burbuja se ajuste al contenido */
+  height: 100px;
+  width: 120px;
+}
+.bubble:hover {
+  transform: scale(1.05); /* Hace que la burbuja se haga ligeramente grande */
+  background-color: #e4f8f6; /* Cambia el color de fondo al pasar el cursor */
+}
+.networks {
+  text-align: center;
+  margin-top: 20px;
+}
+/* Estilos para pantallas de escritorio */
+.networks a {
+  display: inline-block; /* Convertir los enlaces en bloques para que el texto aparezca debajo */
+  margin: 10px;
+  text-decoration: none;
+  text-align: center;
+  width: 100px; /* Ancho del contenedor de cada ícono y texto */
+}
+/* Ajustar el tamaño de las imágenes en pantallas de escritorio */
+.networks img {
+  width: 50px; /* Ancho de la imagen */
+  height: 50px; /* Alto de la imagen */
+  display: block; /* Convertir las imágenes en bloques para que se muestren en línea */
+  margin: 0 auto 5px; /* Centrar las imágenes horizontalmente */
+}
 
-  /*More Projects
+/*Tech stack*/
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* Estilos para cada techsquare */
+.techsquare {
+  background-color: #eeeeee;
+  padding: 25px;
+  width: 220px;
+  margin: 10px;
+  text-align: center;
+}
+/* Estilos para las imágenes dentro de techsquare */
+.techsquare img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+/* Estilos para la clase techsquare_title */
+.techsquare_title {
+  font-weight: bold;
+  font-size: 18px;
+}
+/* Estilos para el texto dentro de techsquare */
+.techsquare span {
+  display: block;
+  font-size: 14px;
+}
+
+/*Profesional Education
+/* Estilos para el contenedor de educación (shield) */
+.main_shield {
+  display: flex;
+  justify-content: center;
+  width: auto; /* Ajuste automático al contenido */
+}
+.shield {
+  display: flex;
+  justify-content: center;
+}
+/* Estilos para cada caja de educación (shield_box) */
+.shield_box {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+/* Estilos para las imágenes dentro de shield_box */
+.shield_box img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+/* Estilos para el título dentro de shield_box */
+.shield_box_title {
+  font-weight: bold;
+  font-size: 30px;
+}
+/* Estilos para el subtítulo dentro de shield_box */
+.shield_box span {
+  display: block;
+  font-size: 20px;
+}
+
+/*Proyectos */
+
+.projects2 {
+display: flex;
+justify-content: center;
+width: 100%; /* Ajustar el ancho al 100% del contenedor */
+}
+.main_projects{
+display: flex;
+width: 100%;
+height: 500px;
+}
+.main_projects img {
+width: 0px;
+flex-grow: 1;
+object-fit: cover;
+opacity: 0.8;
+transition: .5s ease;
+}
+.main_projects img:hover{
+width: 500px;
+opacity: 1;
+filter: contrast(120%)
+}
+
+/*About Projects*/
+.about_projects {
+display: flex;
+justify-content: space-around; /* Espacio uniforme entre las imágenes */
+flex-wrap: wrap; /* Permitir que las imágenes se envuelvan a una nueva línea si no caben */
+margin-top: 20px; /* Espacio superior entre las imágenes y el texto */
+}
+.about_projects img {
+max-width: 200px; /* Ancho máximo de las imágenes */
+height: auto; /* Mantener la relación de aspecto */
+margin: 10px; /* Espacio entre las imágenes */
+border: 2px solid #333; /* Borde alrededor de las imágenes */
+border-radius: 5px; /* Borde redondeado */
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+transition: transform 0.3s ease; /* Agregar transición para un efecto suave al pasar el ratón sobre las imágenes */
+}
+.about_projects img:hover {
+transform: scale(1.1); /* Efecto de escala al pasar el ratón sobre las imágenes */
+cursor: pointer; /* Cambiar el cursor a una mano cuando se pasa el ratón sobre las imágenes */
+}
+#p2, #p4, #p6 {
+  background-color: #fff5e2;
+}
+#p3, #p5 {
+  background-color: #dafbda
+}
+#readmore {
+  font-weight: bold; /* Hace que el texto sea negrita */
+  color: #007BFF; /* Cambia el color del texto */
+  text-decoration: none; /* Quita la subraya del enlace (si es un enlace) */
+  cursor: pointer; /* Cambia el cursor al estilo de mano para indicar que es un enlace o botón */
+  transition: color 0.3s; /* Agrega una transición suave al color al pasar el mouse por encima */
+}
+#readmore:hover {
+  color: #0056b3; /* Cambia el color al pasar el mouse por encima */
+}
+
+
+/*More Projects
 /* Estilos para la tabla de more projects */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
-
 /* Estilos para las celdas de la tabla */
 td {
   padding: 10px;
   border: 1px solid #ccc;
 }
-
 /* Estilos para las celdas de la primera columna */
 td:first-child {
   background-color: #f2f2f2;
   font-weight: bold;
 }
-
 /* Estilos para los enlaces */
 .links {
   color: #3498db;
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .links:hover {
   color: #e74c3c;
 }
 
+
+/*Creditos */
 .credits {
   text-align: center;
   margin-top: 20px;
 }
-
 .credits p {
   margin: 5px;
 }
-
 .credits p:first-child {
   font-size: 12px; /* Tamaño de fuente más pequeño para el primer párrafo */
   font-weight: bold; /* Texto en negrita para el primer párrafo */
 }
-
 .credits p:last-child {
   font-size: 10px; /* Tamaño de fuente más pequeño para el último párrafo */
 }
 
-/* Estilo para el preloader */
-.preloader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999; /* Asegura que esté por encima de todo el contenido */
-}
-
-/* Estilo para el círculo de carga */
-.loader {
-  border: 5px solid #3498db; /* Color del círculo */
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: scaleUpDown 1s ease-in-out infinite alternate; /* Animación para escalar los círculos */
-  margin: 10px; /* Espacio entre círculos */
-}
-
-@keyframes scaleUpDown {
-  0%, 100% {
-    transform: scale(1); /* Tamaño normal */
-    border: 5px solid #3498db; /* Color del círculo */
-  }
-  50% {
-    transform: scale(1.2); /* Tamaño aumentado */
-    border: 5px solid #ffffff; /* Color del fondo del círculo */
-  }
-}

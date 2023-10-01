@@ -399,7 +399,7 @@ cursor: pointer; /* Cambiar el cursor a una mano cuando se pasa el ratón sobre 
 #p2, #p4, #p6 {
   background-color: #fff5e2;
 }
-#p3, #p5 {
+#p3, #p5, #p7 {
   background-color: #dafbda
 }
 

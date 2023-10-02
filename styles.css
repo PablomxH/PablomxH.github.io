@@ -217,16 +217,51 @@ main {
   flex-direction: column;
 }
 .uno {
-  flex-grow: 1;
-  background-color: #ffffff;
-  padding: 20px;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+}
+/* You could use :after - it doesn't really matter */
+.uno:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.06;
+  background-image: url("./background.png");
+  background-position: 50% 0;
+  background-size: cover;
+}
+.dos {
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+}
+/* You could use :after - it doesn't really matter */
+.dos:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.06;
+  background-image: url("./background.png");
+  background-position: 50% 0;
+  background-size: cover;
 }
 .tres, .cinco {
   flex-grow: 1;
   background-color: #DAE3E5;
   padding: 20px;
 }
-.dos,.cuatro {
+.cuatro {
   flex-grow: 1;
   background-color: #ffffff;
   padding: 20px;
@@ -251,6 +286,8 @@ p {
   object-fit: cover;
   margin: 10px auto; /* Centrar la imagen y agregar margen */
   display: block; /* Hace que la imagen sea un bloque para poder centrarla */
+  position: relative; /* Agregamos posición relativa */
+  z-index: 2; /* Aumentamos el índice Z para que estén sobre el ::before */
 }
 .bubble {
   background-color: #ffff; /* Color de fondo de la burbuja */
@@ -259,6 +296,8 @@ p {
   display: inline-block; /* Hace que la burbuja se ajuste al contenido */
   height: 100px;
   width: 120px;
+  position: relative; /* Agregamos posición relativa */
+  z-index: 2; /* Aumentamos el índice Z para que estén sobre el ::before */
 }
 .bubble:hover {
   transform: scale(1.05); /* Hace que la burbuja se haga ligeramente grande */

@@ -4,7 +4,9 @@ const about = document.getElementById('about2');
 const stack = document.getElementById('stack2');
 const education = document.getElementById('education2');
 const projects = document.getElementById('projects2');
+const contact_me = document.getElementById('contact_me');
 console.log('Listo1');
+
 // Agrega una verificación para el ancho de la pantalla antes de asignar los eventos
 if (window.innerWidth > 767) {
     //Botones de la pagina
@@ -13,6 +15,7 @@ if (window.innerWidth > 767) {
     const aboutit = document.getElementById("PabloAbout")
     const profeedu = document.getElementById("PabloEdu")
     const proyects = document.getElementById("PabloPro")
+    const contacto = document.getElementById('contact_meP');
 
     window.addEventListener('load', iniciarPortafolio);
 
@@ -20,6 +23,7 @@ if (window.innerWidth > 767) {
     aboutit.addEventListener("click", iniciarPortafolio);
     profeedu.addEventListener("click", edu);
     proyects.addEventListener("click", proj);
+    contacto.addEventListener("click", contact);
 }
 
 function iniciarPortafolio() {
@@ -28,6 +32,7 @@ function iniciarPortafolio() {
     projects.style.display = "none";
     title.style.display = "block";
     about.style.display = "block";
+    contact_me.style.display = "none";
 }
 
 function techstack(){
@@ -36,6 +41,7 @@ function techstack(){
     projects.style.display = "none";
     title.style.display = "none";
     stack.style.display = "block"; // Mostrar la sección "Tech Stack"
+    contact_me.style.display = "none";
 }
 
 function edu(){
@@ -44,6 +50,7 @@ function edu(){
     projects.style.display = "none";
     title.style.display = "none";
     education.style.display = "block";
+    contact_me.style.display = "none";
 }
 
 function proj(){
@@ -52,6 +59,15 @@ function proj(){
     stack.style.display = "none";
     title.style.display = "none";
     projects.style.display = "block";
+    contact_me.style.display = "none";
+}
+function contact(){
+    about.style.display = "none";
+    education.style.display = "none";
+    stack.style.display = "none";
+    title.style.display = "none";
+    projects.style.display = "none";
+    contact_me.style.display = "block";
 }
 
 const projectLinks = {

@@ -109,3 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+setTimeout(function(){
+    $('.loader_bg').fadeToggle();
+}, 1500);

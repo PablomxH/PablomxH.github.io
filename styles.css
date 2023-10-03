@@ -540,3 +540,12 @@ td:first-child {
   font-size: 10px; /* Tamaño de fuente más pequeño para el último párrafo */
 }
 
+/* Estilos para los datos personales */
+#personalData {
+  font-size: 18px; /* Tamaño de fuente para los datos personales */
+  color: #3498db; /* Cambia el color de texto a un azul llamativo */
+  margin-top: 10px; /* Espacio superior */
+  font-weight: bold; /* Texto en negrita para resaltar */
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+}

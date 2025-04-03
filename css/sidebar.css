@@ -1,0 +1,73 @@
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    height: 100vh;
+    background-color: #081528;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar contenido */
+    align-items: flex-start; /* Alinear a la izquierda */
+    text-align: left;
+    padding-left: 10%;
+}
+
+/* Estilos del nombre */
+.sidebar h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos del subtítulo */
+.sidebar h2 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #61dafb;
+    margin-bottom: 20px;
+}
+
+/* Descripción */
+.sidebar p {
+    font-size: 14px;
+    color: #A0AEC0;
+    margin-bottom: 50px;
+}
+
+/* Menú de navegación */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+    position: relative;
+}
+
+.sidebar nav ul li a {
+    font-size: 20px;
+    color: #A0AEC0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: block;
+    position: relative;
+}
+
+.sidebar nav ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #61dafb;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar nav ul li a:hover::before {
+    width: 100%;
+}

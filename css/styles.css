@@ -1,0 +1,51 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    background-color: #081528;
+    color: white;
+}
+
+/* Redes sociales */
+.social-links {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #A0AEC0;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #61dafb;
+}
+
+
+/* Contenido principal */
+.content {
+    margin-left: 45%;
+    width: 55%;
+    padding: 50px;
+}
+
+section {
+    padding: 50px 0;
+    background-color: #081528;
+}
+
+.cursor-light {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    background: radial-gradient(circle, rgba(16, 43, 73, 0.4) 10%, rgba(8, 21, 40, 0) 50%);
+    transition: background 0.1s ease-out;
+    z-index: 9999; /* Asegura que esté en la capa superior */
+}
+

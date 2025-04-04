@@ -2,16 +2,20 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    display: flex;
-    align-items: flex-start;
+    display: flex; /* Usaremos flexbox para centrar las columnas */
+    justify-content: center; /* Centra horizontalmente las columnas */
+    align-items: flex-start; /* Alinea el contenido al inicio verticalmente */
     background-color: #081528;
     color: white;
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la pantalla */
 }
 
 /* Redes sociales */
 .social-links {
+    /* Mantenemos la posición absolute, pero ajustamos para que sea relativo al sidebar */
     position: absolute;
-    bottom: -110px;
+    bottom: -150px; /* Ajusta la distancia desde la parte inferior */
+    left: 10%; /* Alineado con el inicio del contenido del sidebar */
     display: flex;
     gap: 15px;
 }
@@ -26,12 +30,11 @@ body {
     color: #61dafb;
 }
 
-
 /* Contenido principal */
 .content {
-    margin-left: 45%;
-    width: 55%;
+    width: 45%; /* Mantenemos el ancho */
     padding: 50px;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
 section {
@@ -48,4 +51,3 @@ section {
     transition: background 0.1s ease-out;
     z-index: 9999; /* Asegura que esté en la capa superior */
 }
-

@@ -1,16 +1,18 @@
 /* Sidebar */
 .sidebar {
-    width: 25%;
-    height: 75vh;
+    width: 30%;
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
     background-color: #081528;
-    padding: 10px;
-    position: fixed;
+    padding: 30px; /* Reducimos un poco el padding general */
+    position: sticky; /* Se mantiene fijo dentro de su contenedor padre */
+    top: 20px; /* Espacio desde la parte superior */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrar contenido */
-    align-items: flex-start; /* Alinear a la izquierda */
+    justify-content: flex-start; /* Alinea el contenido al inicio verticalmente */
+    align-items: flex-start;
     text-align: left;
     padding-left: 10%;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
 /* Estilos del nombre */
@@ -18,6 +20,7 @@
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
+    word-break: break-word; /* Evita que palabras largas rompan el diseño */
 }
 
 /* Estilos del subtítulo */
@@ -26,6 +29,7 @@
     font-weight: normal;
     color: #61dafb;
     margin-bottom: 20px;
+    word-break: break-word; /* Evita que palabras largas rompan el diseño */
 }
 
 /* Descripción */
@@ -33,6 +37,8 @@
     font-size: 14px;
     color: #A0AEC0;
     margin-bottom: 50px;
+    white-space: pre-line; /* Respeta los saltos de línea en el texto */
+    word-break: break-word; /* Evita que palabras largas rompan el diseño */
 }
 
 /* Menú de navegación */
@@ -42,7 +48,7 @@
 }
 
 .sidebar nav ul li {
-    margin: 20px 0;
+    margin: 15px 0;
     position: relative;
 }
 

@@ -26,6 +26,28 @@ document.addEventListener("mousemove", (event) => {
     cursorLight.style.background = `radial-gradient(circle at ${event.clientX}px ${event.clientY}px, rgba(16, 43, 73, 0.4) 10%, rgba(8, 21, 40, 0) 50%)`;
 });
 
+function resizeIframe(iframe) {
+    try {
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        if (doc && doc.body) {
+            iframe.style.height = doc.body.scrollHeight + "px";
+        }
+    } catch (e) {
+        console.warn("No se pudo redimensionar el iframe:", e);
+    }
+}
 
+window.addEventListener('DOMContentLoaded', () => {
+    const iframe = document.getElementById('cart1');
 
+    // Redimensionar cuando carga
+    iframe.addEventListener('load', () => {
+        resizeIframe(iframe);
+
+        // Redimensionar periódicamente (cada 300ms)
+        setInterval(() => {
+            resizeIframe(iframe);
+        }, 300);
+    });
+});
 

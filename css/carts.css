@@ -1,0 +1,67 @@
+.experience-card {
+    font-family: Arial, sans-serif;
+    background-color: #081528;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience-date {
+    font-size: 0.9em;
+    color: #A0AEC0;
+}
+
+.experience-title {
+    font-weight: bold;
+    color: #E2E8F0;
+}
+
+.experience-company {
+    color: #61DAFB; /* Highlight color for company */
+}
+
+.experience-description {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.experience-tech-stack {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tech-badge {
+    background-color: #334155; /* Darker background for badges */
+    color: #F0F4F8;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85em;
+}
+.experience-card {
+    font-family: Arial, sans-serif;
+    background-color: #081528;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Hover: cambia fondo, agrega borde sutil y muestra cursor */
+.experience-card:hover {
+    background-color: #1E293B; /* color base */
+    color: #CBD5E0;
+    border: 2px solid #042d38; /* borde brillante */
+    box-shadow: 0 0 15px rgba(97, 218, 251, 0.2); /* glow sutil */
+}

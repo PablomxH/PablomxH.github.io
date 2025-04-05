@@ -1,0 +1,27 @@
+
+#about {
+    padding: 40px 0; /* Increase padding for more visual space */
+    background-color: #081528; /* Ensure consistent background */
+}
+
+#about h2 {
+    color: #61DAFB; /* Contrasting title color (cyan) */
+    font-size: 2.5em; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center; /* Center the title */
+}
+
+#about p {
+    font-size: 1.1em; /* Slightly larger and more readable font size */
+    line-height: 1.8; /* Comfortable line spacing */
+    color: #CBD5E0; /* Lighter text color for better readability on dark background */
+    max-width: 600px; /* Limit the paragraph width for comfortable reading */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    padding: 0 20px; /* Add some horizontal padding for smaller screens */
+}
+
+#about p strong {
+    color: #A78BFA; /* Highlight color for keywords (purple) */
+    font-weight: bold; /* Make sure the keywords stand out */
+}

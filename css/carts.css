@@ -5,63 +5,74 @@
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card:hover {
+    background-color: #1E293B;
+    color: #CBD5E0;
+    border: 2px solid #042d38;
+    box-shadow: 0 0 15px rgba(97, 218, 251, 0.2);
 }
 
 .experience-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Vertically center items in the header */
     margin-bottom: 10px;
 }
 
 .experience-date {
     font-size: 0.9em;
     color: #A0AEC0;
+    width: 100px;
+    flex-shrink: 0;
+    text-align: left;
+    display: flex; /* Enable Flexbox for the date */
+    align-items: center; /* Vertically center the date text */
+    justify-content: center; /* Optionally center text horizontally within its box */
+    min-height: 50px; /* Set a minimum height to match title/company */
+}
+
+.experience-info {
+    flex-grow: 1;
+    margin-left: 15px;
+    display: flex; /* Enable Flexbox for title and company */
+    flex-direction: column; /* Stack title and company vertically */
+    justify-content: center; /* Vertically center title and company */
+    min-height: 50px; /* Ensure it has at least the same height as date */
 }
 
 .experience-title {
     font-weight: bold;
     color: #E2E8F0;
+    margin-bottom: 5px;
 }
 
 .experience-company {
-    color: #61DAFB; /* Highlight color for company */
+    color: #61DAFB;
+    font-size: 0.95em;
 }
 
 .experience-description {
-    margin-bottom: 15px;
     line-height: 1.6;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .experience-tech-stack {
     display: flex;
     gap: 10px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tech-badge {
-    background-color: #334155; /* Darker background for badges */
+    background-color: #334155;
     color: #F0F4F8;
     padding: 8px 12px;
     border-radius: 6px;
     font-size: 0.85em;
-}
-.experience-card {
-    font-family: Arial, sans-serif;
-    background-color: #081528;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent;
-}
-
-/* Hover: cambia fondo, agrega borde sutil y muestra cursor */
-.experience-card:hover {
-    background-color: #1E293B; /* color base */
-    color: #CBD5E0;
-    border: 2px solid #042d38; /* borde brillante */
-    box-shadow: 0 0 15px rgba(97, 218, 251, 0.2); /* glow sutil */
 }

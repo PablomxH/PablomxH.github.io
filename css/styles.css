@@ -17,29 +17,6 @@ body {
     align-items: flex-start; /* Alinea el contenido al inicio verticalmente dentro del contenedor */
 }
 
-/* Redes sociales */
-.social-links {
-    /* Mantenemos la posición absolute, pero ajustamos para que sea relativo al sidebar */
-    position: absolute;
-    bottom: -150px; /* Ajusta la distancia desde la parte inferior */
-    left: 10%; /* Alineado con el inicio del contenido del sidebar */
-    display: flex;
-    gap: 15px;
-}
-
-.social-links a {
-    color: #A0AEC0;
-    font-size: 24px;
-    transition: color 0.3s;
-    transform: scale(1);
-    transition: transform 0.2s ease-in-out, color 0.3s;
-}
-
-.social-links a:hover {
-    color: #61dafb;
-    transform: scale(1.1); /* Ligeramente más grande */
-}
-
 /* Contenido principal */
 .content {
     width: 65%; /* Ajustamos el ancho del content para ocupar el espacio restante */
@@ -47,6 +24,7 @@ body {
     top: 50px;
     box-sizing: border-box;
 }
+
 
 section {
     padding: 50px 0;
@@ -61,12 +39,4 @@ section {
     background: radial-gradient(circle, rgba(16, 43, 73, 0.4) 10%, rgba(8, 21, 40, 0) 50%);
     transition: background 0.1s ease-out;
     z-index: 9999; /* Asegura que esté en la capa superior */
-}
-.cart-frame {
-    border: none;
-    outline: none;
-    box-shadow: none;
-    width: 100%;
-    height: 300px; /* Ajusta según el contenido */
-    display: block; /* Evita el pequeño espacio extra debajo del iframe */
 }

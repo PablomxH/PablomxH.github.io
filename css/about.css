@@ -32,3 +32,12 @@ body.loaded #about {
     color: #A78BFA; /* Highlight color for keywords (purple) */
     font-weight: bold; /* Make sure the keywords stand out */
 }
+
+.cart-frame {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    height: 300px; /* Ajusta según el contenido */
+    display: block; /* Evita el pequeño espacio extra debajo del iframe */
+}

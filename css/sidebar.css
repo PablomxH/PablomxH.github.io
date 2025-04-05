@@ -1,6 +1,6 @@
 /* Sidebar */
 .sidebar {
-    width: 30%; /* Mantenemos el ancho del sidebar */
+    width: 30%; /* Ancho para pantallas más grandes */
     height: auto;
     background-color: #081528;
     padding: 35px;
@@ -13,6 +13,7 @@
     text-align: left;
     padding-left: 3%;
     box-sizing: border-box;
+    z-index: 100; /* Asegura que esté por encima del contenido si se superpone */
 }
 
 /* Estilos del nombre */
@@ -80,4 +81,79 @@
 
 .sidebar nav ul li a:hover::before {
     width: 100%;
+}
+
+/* Redes sociales */
+.social-links {
+    position: absolute;
+    bottom: -150px;
+    left: 10%;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #A0AEC0;
+    font-size: 24px;
+    transition: color 0.3s;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out, color 0.3s;
+}
+
+.social-links a:hover {
+    color: #61dafb;
+    transform: scale(1.1); /* Ligeramente más grande */
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Apilamos el sidebar y el contenido */
+        align-items: center; /* Centramos los elementos horizontalmente */
+    }
+
+    .sidebar {
+        width: 80%; /* El sidebar ocupa más ancho en pantallas medianas */
+        position: relative; /* Ya no es sticky para evitar problemas de scroll */
+        top: auto; /* Reseteamos la posición top */
+        margin-bottom: 30px; /* Espacio debajo del sidebar */
+    }
+
+    .content {
+        width: 90%; /* El contenido ocupa más ancho */
+        margin-left: 0; /* Reseteamos el margen izquierdo */
+        padding: 30px;
+    }
+
+    .social-links {
+        position: relative; /* Ahora relativo al sidebar */
+        bottom: 20px;
+        left: 0;
+        justify-content: center; /* Centramos los iconos */
+        width: 100%; /* Ocupa todo el ancho del sidebar */
+    }
+}
+
+/* Media query para pantallas pequeñas (ejemplo: móviles - ancho máximo 480px) */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 95%; /* El sidebar ocupa casi todo el ancho */
+        padding: 20px;
+    }
+
+    .sidebar h1 {
+        font-size: 30px;
+    }
+
+    .sidebar h2 {
+        font-size: 18px;
+    }
+
+    .sidebar nav ul li a {
+        font-size: 18px;
+    }
+
+    .content {
+        width: 95%;
+        padding: 20px;
+    }
 }

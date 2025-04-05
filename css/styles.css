@@ -34,6 +34,7 @@ body {
 .content {
     width: 45%; /* Mantenemos el ancho */
     padding: 50px;
+    top: 50px;
     box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 

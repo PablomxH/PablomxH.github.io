@@ -3,15 +3,15 @@
     width: 30%;
     height: auto; /* Ajusta la altura automáticamente según el contenido */
     background-color: #081528;
-    padding: 30px; /* Reducimos un poco el padding general */
+    padding: 35px; /* Reducimos un poco el padding general */
     position: sticky; /* Se mantiene fijo dentro de su contenedor padre */
-    top: 20px; /* Espacio desde la parte superior */
+    top: 50px; /* Espacio desde la parte superior */
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Alinea el contenido al inicio verticalmente */
     align-items: flex-start;
     text-align: left;
-    padding-left: 10%;
+    padding-left: 3%;
     box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 

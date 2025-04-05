@@ -2,12 +2,19 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    display: flex; /* Usaremos flexbox para centrar las columnas */
-    justify-content: center; /* Centra horizontalmente las columnas */
+    display: flex; /* Mantenemos flex para el centrado */
+    justify-content: center; /* Centra horizontalmente el contenedor de las columnas */
     align-items: flex-start; /* Alinea el contenido al inicio verticalmente */
     background-color: #081528;
     color: white;
-    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la pantalla */
+    min-height: 100vh;
+}
+.main-container {
+    display: flex;
+    width: 85%; /* Ajusta el ancho total del contenedor de las columnas */
+    max-width: 1200px; /* O un valor máximo que consideres adecuado */
+    justify-content: space-between; /* Espacia el sidebar y el content */
+    align-items: flex-start; /* Alinea el contenido al inicio verticalmente dentro del contenedor */
 }
 
 /* Redes sociales */
@@ -24,18 +31,21 @@ body {
     color: #A0AEC0;
     font-size: 24px;
     transition: color 0.3s;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out, color 0.3s;
 }
 
 .social-links a:hover {
     color: #61dafb;
+    transform: scale(1.1); /* Ligeramente más grande */
 }
 
 /* Contenido principal */
 .content {
-    width: 45%; /* Mantenemos el ancho */
+    width: 65%; /* Ajustamos el ancho del content para ocupar el espacio restante */
     padding: 50px;
     top: 50px;
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    box-sizing: border-box;
 }
 
 section {

@@ -1,18 +1,18 @@
 /* Sidebar */
 .sidebar {
-    width: 30%;
-    height: auto; /* Ajusta la altura automáticamente según el contenido */
+    width: 30%; /* Mantenemos el ancho del sidebar */
+    height: auto;
     background-color: #081528;
-    padding: 35px; /* Reducimos un poco el padding general */
-    position: sticky; /* Se mantiene fijo dentro de su contenedor padre */
-    top: 50px; /* Espacio desde la parte superior */
+    padding: 35px;
+    position: sticky;
+    top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinea el contenido al inicio verticalmente */
+    justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
     padding-left: 3%;
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    box-sizing: border-box;
 }
 
 /* Estilos del nombre */
@@ -61,8 +61,12 @@
     font-weight: 600;
     display: block;
     position: relative;
+    color: #A0AEC0;
+    transition: color 0.3s ease-in-out; /* Añadimos transición al color */
 }
-
+.sidebar nav ul li a:hover {
+    color: #E2E8F0; /* Cambia a un color más claro al pasar el cursor */
+}
 .sidebar nav ul li a::before {
     content: "";
     position: absolute;

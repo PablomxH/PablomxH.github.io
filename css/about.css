@@ -1,6 +1,6 @@
 
 #about {
-    padding: 40px 0; /* Increase padding for more visual space */
+    padding: 50px 0; /* Increase padding for more visual space */
     background-color: #081528; /* Ensure consistent background */
     opacity: 0;
     transform: translateY(20px); /* Empieza un poco abajo */
@@ -20,10 +20,10 @@ body.loaded #about {
 }
 
 #about p {
-    font-size: 1.1em; /* Slightly larger and more readable font size */
+    font-size: 1em; /* Slightly larger and more readable font size */
     line-height: 1.8; /* Comfortable line spacing */
     color: #CBD5E0; /* Lighter text color for better readability on dark background */
-    max-width: 600px; /* Limit the paragraph width for comfortable reading */
+    max-width: 1000px; /* Limit the paragraph width for comfortable reading */
     margin: 0 auto; /* Center the paragraph horizontally */
     padding: 0 20px; /* Add some horizontal padding for smaller screens */
 }

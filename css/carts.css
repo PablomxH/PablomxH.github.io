@@ -18,7 +18,7 @@
     color: #CBD5E0;
     border: 2px solid #042d38;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
-    transform: translateY(-3px); /* Ligeramente hacia arriba */
+    /*transform: translateY(-1px); /* Ligeramente hacia arriba */
 }
 
 .experience-header {

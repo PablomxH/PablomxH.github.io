@@ -5,7 +5,7 @@
     background-color: #081528;
     padding: 35px;
     position: sticky;
-    top: 50px;
+    top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,7 +20,7 @@
 .sidebar h1 {
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     word-break: break-word; /* Evita que palabras largas rompan el diseño */
 }
 
@@ -29,13 +29,14 @@
     font-size: 22px;
     font-weight: normal;
     color: #61dafb;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
     word-break: break-word; /* Evita que palabras largas rompan el diseño */
 }
 
 /* Descripción */
 .sidebar p {
-    font-size: 14px;
+    font-size: 1em;
+    line-height: 1.2em;
     color: #A0AEC0;
     margin-bottom: 50px;
     white-space: pre-line; /* Respeta los saltos de línea en el texto */

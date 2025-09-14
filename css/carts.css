@@ -73,9 +73,11 @@
 }
 
 .tech-badge {
-    background-color: #334155;
-    color: #F0F4F8;
+    /* background-color: #334155; */
+    background-color: #042d38;
+    /* color: #F0F4F8; */
+    color: #61DAFB;
     padding: 8px 12px;
-    border-radius: 6px;
+    border-radius: 36px;
     font-size: 0.85em;
 }
